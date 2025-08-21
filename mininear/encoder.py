@@ -55,6 +55,6 @@ class Encoder:
         raw = bytearray(sequence, 'ascii')
         encoded = raw.translate(_TABLE)
         array = numpy.asarray(encoded)
-        onehot = numpy.eye(len(_ALPHABET) + 1)[array][:, :-1]
+        onehot = numpy.eye(26)[array][:, :-1]
         return self.model(onehot)
 

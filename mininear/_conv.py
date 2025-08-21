@@ -4,9 +4,12 @@ Derived from the `numpy-ml project <https://numpy-ml.readthedocs.io>`_
 under the terms of the GNU General Public License 3.0.
 
 """
+
+import functools
 import numpy
 
 
+@functools.lru_cache(8)
 def _im2col_indices(X_shape, fr, fc, p, s, d=0):
     """
     Helper function that computes indices into X in prep for columnization in
