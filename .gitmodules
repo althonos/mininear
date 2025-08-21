@@ -1,0 +1,3 @@
+[submodule "vendor/NEAR"]
+	path = vendor/NEAR
+	url = https://github.com/TravisWheelerLab/NEAR
