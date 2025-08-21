@@ -3,6 +3,8 @@ from __future__ import annotations
 import abc
 import typing
 
+import numpy
+
 from ._conv import conv1D
 
 if typing.TYPE_CHECKING:
@@ -78,6 +80,7 @@ class ResConvLayer(Layer):
         X += self.conv2(self.act(self.conv1(self.act(X))))
         return X
 
+
 class ResNet(Layer):
     def __init__(
         self,
@@ -88,7 +91,7 @@ class ResNet(Layer):
         self.embedding_layer = embedding
         self.conv_layers = convolutions
    
-    def __call__(self, X: ArrayNxM[numpy.floating]):
+    def __call__(self, X: ArrayNxM[numpy.floating]) -> ArrayNxM[numpy.floating]:
         e = self.embedding_layer(X)
         for layer in self.conv_layers:
             e = layer(e)
