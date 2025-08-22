@@ -43,6 +43,25 @@ class LinearLayer(Layer):
         return out
 
 
+class EmbeddingLayer(Layer):
+    def __init__(
+        self,
+        weights: ArrayNxM[numpy.floating], 
+        biases: Optional[ArrayN[numpy.floating]] = None,
+        ignore_index=-1,
+    ):
+        self.weights = weights
+        self.biases = biases
+        self.ignore_index = ignore_index
+
+    def __call__(self, X: ArrayN):
+        _X = numpy.asarray(X)
+        mask = _X == self.ignore_index
+        out = numpy.take(self.weights, numpy.where(mask, 0, _X), axis=0)
+        out = numpy.where(mask[..., None], 0.0, out)
+        return out
+
+
 class ConvLayer(Layer):
 
     def __init__(
