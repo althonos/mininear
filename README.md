@@ -11,7 +11,7 @@
 [![Python Versions](https://img.shields.io/pypi/pyversions/mininear.svg?style=flat-square&maxAge=3600)](https://pypi.org/project/mininear/#files)
 [![Python Implementations](https://img.shields.io/badge/impl-universal-success.svg?style=flat-square&maxAge=3600&label=impl)](https://pypi.org/project/mininear/#files)
 [![Source](https://img.shields.io/badge/source-GitHub-303030.svg?maxAge=2678400&style=flat-square)](https://github.com/althonos/mininear/)
-[![Mirror](https://img.shields.io/badge/mirror-EMBL-009f4d?style=flat-square&maxAge=2678400)](https://git.embl.de/larralde/mininear/)
+[![Mirror](https://img.shields.io/badge/mirror-LUMC-003EAA.svg?maxAge=2678400&style=flat-square)](https://git.lumc.nl/mflarralde/mininear)
 [![GitHub issues](https://img.shields.io/github/issues/althonos/mininear.svg?style=flat-square&maxAge=600)](https://github.com/althonos/mininear/issues)
 [![Docs](https://img.shields.io/readthedocs/mininear/latest?style=flat-square&maxAge=600)](https://mininear.readthedocs.io)
 [![Changelog](https://img.shields.io/badge/keep%20a-changelog-8A0707.svg?maxAge=2678400&style=flat-square)](https://github.com/althonos/mininear/blob/master/CHANGELOG.md)
