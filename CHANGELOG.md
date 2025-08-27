@@ -6,6 +6,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 
 ## [Unreleased]
-[Unreleased]: https://github.com/althonos/mininear/compare/a9ace0d...HEAD
+[Unreleased]: https://github.com/althonos/mininear/compare/v0.1.0...HEAD
+
+## [v0.1.0] - 2025-08-27
+[v0.1.0]: https://github.com/althonos/mininear/compare/a9ace0d...v0.1.0
 
 Initial release.

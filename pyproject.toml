@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = 'mininear'
-version = "0.0.1"
+version = '0.1.0'
 description = "A NumPy port of the NEAR code for embedding protein sequences."
 readme = 'README.md'
 requires-python = '>=3.7'
@@ -17,7 +17,7 @@ classifiers = [
   "Development Status :: 4 - Beta",
   "Intended Audience :: Developers",
   "Intended Audience :: Science/Research",
-  "License :: OSI Approved :: BSD License",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
   "Operating System :: OS Independent",
   "Programming Language :: Python :: 3",
   "Topic :: Scientific/Engineering :: Bio-Informatics",
@@ -37,6 +37,9 @@ dependencies = [
 
 [tool.setuptools]
 include-package-data = true
+
+[tool.setuptools.package-data]
+mininear = ["*.npz"]
 
 [tool.setuptools.packages.find]
 namespaces = false
