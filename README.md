@@ -37,17 +37,11 @@ versions (3.7+).
 
 ## 🔧 Installing
 
-Install the `mininear` package from GitHub, until a PyPI release is made 
-available:
-```console
-$ pip install git+https://github.com/althonos/mininear
-```
-
-<!-- Install the `mininear` package directly from [PyPi](https://pypi.org/project/mininear)
+Install the `mininear` package directly from [PyPi](https://pypi.org/project/mininear)
 which hosts universal wheels that can be installed with `pip`:
 ```console
 $ pip install mininear
-``` -->
+```
 
 <!-- Otherwise, `mininear` is also available as a [Bioconda](https://bioconda.github.io/)
 package:
